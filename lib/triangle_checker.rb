@@ -25,7 +25,17 @@ class TriangleChecker
     return false
   end
 
+  def get_triangle
+    if is_equilateral?()
+      return "Equilateral"
+    elsif is_not_a_triangle?()
+      return "Is not a triangle"
+    elsif is_isosceles?
+      return "Isosceles"
+    else
+      return "Scalene"
+    end
+  end
+
 
 end
-
-# check equilateral, not a triangle, isosceles, scalene 

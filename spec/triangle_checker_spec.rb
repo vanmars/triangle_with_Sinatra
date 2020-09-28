@@ -32,12 +32,13 @@ describe TriangleChecker do
       expect(triCheck.is_isosceles?()).to(eq(true))
     end
   end
+
+  describe('#get_triangle') do
+    it('returns what type of triangle is given') do
+      triCheck = TriangleChecker.new(3, 4, 5)
+      expect(triCheck.get_triangle()).to(eq("Scalene"))
+    end
+  end
 end
 
  
-# describe("#basic_anagram") do
-#   it('checks whether two case-matching words are anagrams') do
-#     lower_checker = AnagramChecker.new("cat", "act")
-#     expect(lower_checker.basic_anagram()).to(eq("they are anagrams"))
-#   end
-# end
