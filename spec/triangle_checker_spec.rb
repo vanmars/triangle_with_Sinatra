@@ -11,6 +11,13 @@ describe TriangleChecker do
       # expect(triCheck[@side3]).to(eq(5))
     end
   end
+
+  describe('#is_equilateral') do
+    it('checks whether a triangle is equilateral') do
+      triCheck = TriangleChecker.new(3,4,5)
+      expect(triCheck.is_equilateral()).to(eq(false))
+    end
+  end
 end
 
  
