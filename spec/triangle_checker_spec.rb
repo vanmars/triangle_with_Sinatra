@@ -7,8 +7,6 @@ describe TriangleChecker do
     it('checks whether the sides are assigned when a new TriangleChecker is initialized') do
       triCheck = TriangleChecker.new(3,4,5)
       expect(triCheck.side1).to(eq(3))
-      # expect(triCheck[@side2]).to(eq(4))
-      # expect(triCheck[@side3]).to(eq(5))
     end
   end
 
@@ -37,6 +35,13 @@ describe TriangleChecker do
     it('returns what type of triangle is given') do
       triCheck = TriangleChecker.new(3, 4, 5)
       expect(triCheck.get_triangle()).to(eq("Scalene"))
+    end
+  end
+
+  describe('#get_triangle') do
+  it('returns what type of triangle is given') do
+    triCheck = TriangleChecker.new(3, 4, 4)
+    expect(triCheck.get_triangle()).to(eq("Isosceles"))
     end
   end
 end

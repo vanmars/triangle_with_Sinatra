@@ -16,7 +16,7 @@ This project uses Sinatra. It creates a route to allow a user to enter three sid
 
 Clone this repo using:
 
-```git clone https://github.com/alma-frankenstein/galacticCalculator myRepo```
+```git clone https://github.com/alma-frankenstein/triangle_with_Sinatra myRepo```
 
 Cd to the myRepo directory.
 
