@@ -1,5 +1,5 @@
 class TriangleChecker
-  attr_reader(:side1, :side2, :side3)
+  attr_reader :side1, :side2, :side3
 
   def initialize(side1, side2, side3)
     @side1 = side1
@@ -30,7 +30,7 @@ class TriangleChecker
       return "Equilateral"
     elsif is_not_a_triangle?()
       return "Is not a triangle"
-    elsif is_isosceles?
+    elsif is_isosceles?()
       return "Isosceles"
     else
       return "Scalene"
