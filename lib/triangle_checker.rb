@@ -16,7 +16,7 @@ class TriangleChecker
   end
 
   def isosceles?
-    ((@side1 == @side2) || (@side1 == @side3) || (@side3 == @side2)) ? true : false
+    (@side1 == @side2) || (@side1 == @side3) || (@side3 == @side2) ? true : false
   end
 
   def get_triangle
